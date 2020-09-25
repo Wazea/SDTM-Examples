@@ -1,0 +1,13 @@
+package com.drvasile.design_patterns.structural.adapter;
+
+import com.drvasile.domain.models.courses.papers.TxtPaper;
+
+public class AdapterMain {
+
+    public static void main(String[] args) {
+        TxtPaper txtPaper = new TxtPaper();
+        ClassPdfAdapter classPdfAdapter = new ClassPdfAdapter();
+        txtPaper.editText();
+        classPdfAdapter.editText();
+    }
+}
