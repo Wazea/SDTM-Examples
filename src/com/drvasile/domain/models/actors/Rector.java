@@ -1,12 +1,17 @@
 package com.drvasile.domain.models.actors;
 
-import com.drvasile.domain.models.structures.interfaces.IUniversityEntity;
-import com.drvasile.domain.models.structures.interfaces.SimpleEntity;
+import com.drvasile.domain.models.structures.interfaces.UniversityEntity;
+import com.drvasile.domain.models.structures.interfaces.ISimpleEntity;
 
-public class Rector implements IUniversityEntity, SimpleEntity {
+public class Rector extends UniversityEntity implements ISimpleEntity {
 
     @Override
-    public String returnObject() {
-        return toString();
+    public void traverseObject() {
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Rector";
     }
 }

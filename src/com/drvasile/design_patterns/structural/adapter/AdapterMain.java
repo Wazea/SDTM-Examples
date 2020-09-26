@@ -6,8 +6,13 @@ public class AdapterMain {
 
     public static void main(String[] args) {
         TxtPaper txtPaper = new TxtPaper();
-        ClassPdfAdapter classPdfAdapter = new ClassPdfAdapter();
+//        ClassPdfAdapter classPdfAdapter = new ClassPdfAdapter();
+//
+//        txtPaper.editText();
+//        classPdfAdapter.editText();
+
+        ObjectPdfAdapter objectPdfAdapter = new ObjectPdfAdapter();
         txtPaper.editText();
-        classPdfAdapter.editText();
+        objectPdfAdapter.editText();
     }
 }

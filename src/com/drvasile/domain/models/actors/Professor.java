@@ -1,9 +1,10 @@
 package com.drvasile.domain.models.actors;
 
 import com.drvasile.domain.models.actors.interfaces.IUniversityEmployee;
-import com.drvasile.domain.models.structures.interfaces.SimpleEntity;
+import com.drvasile.domain.models.structures.interfaces.ISimpleEntity;
+import com.drvasile.domain.models.structures.interfaces.UniversityEntity;
 
-public class Professor implements IUniversityEmployee, SimpleEntity {
+public class Professor extends UniversityEntity implements IUniversityEmployee, ISimpleEntity {
 
     private int age;
     private boolean isPhd;
@@ -11,8 +12,8 @@ public class Professor implements IUniversityEmployee, SimpleEntity {
     private Student[] students;
 
     @Override
-    public String returnObject() {
-        return toString();
+    public void traverseObject() {
+        System.out.println(toString());
     }
 
     @Override

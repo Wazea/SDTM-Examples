@@ -2,22 +2,42 @@ package com.drvasile.domain.models.structures;
 
 import com.drvasile.domain.models.actors.Rector;
 import com.drvasile.domain.models.structures.interfaces.IComplexEntity;
-import com.drvasile.domain.models.structures.interfaces.IUniversityEntity;
+import com.drvasile.domain.models.structures.interfaces.UniversityEntity;
 
-public class University implements IUniversityEntity, IComplexEntity {
+public class University extends UniversityEntity implements IComplexEntity {
 
     private Rector rector;
     private Faculty[] faculties;
 
+    public Rector getRector() {
+        return rector;
+    }
+
+    public void setRector(Rector rector) {
+        this.rector = rector;
+    }
+
+    public Faculty[] getFaculties() {
+        return faculties;
+    }
+
+    public void setFaculties(Faculty[] faculties) {
+        this.faculties = faculties;
+    }
+
     @Override
-    public void returnObjects() {
+    public void traverseObject() {
 
-        System.out.println("University");
+        System.out.println(toString());
 
-        rector.returnObject();
+        rector.setLevel(this.getLevel() + 1);
+        printWhiteSpaces(rector.getLevel());
+        rector.traverseObject();
 
         for (Faculty faculty : faculties) {
-            faculty.returnObjects();
+            faculty.setLevel(this.getLevel() + 1);
+            printWhiteSpaces(faculty.getLevel());
+            faculty.traverseObject();
         }
     }
 

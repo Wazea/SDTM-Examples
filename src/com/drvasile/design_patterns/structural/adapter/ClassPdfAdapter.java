@@ -7,7 +7,7 @@ public class ClassPdfAdapter extends PdfPaper implements IPaper {
 
     @Override
     public void editText() {
-        PdfConvertor.convertPdf();
+        PdfConverter.convertPdf();
         super.editPdfText();
     }
 

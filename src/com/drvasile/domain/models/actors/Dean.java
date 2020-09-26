@@ -1,13 +1,15 @@
 package com.drvasile.domain.models.actors;
 
-import com.drvasile.domain.models.structures.interfaces.SimpleEntity;
-import com.drvasile.domain.models.structures.interfaces.IUniversityEntity;
+import com.drvasile.domain.models.structures.interfaces.ISimpleEntity;
+import com.drvasile.domain.models.structures.interfaces.UniversityEntity;
 
-public class Dean implements IUniversityEntity, SimpleEntity {
+import java.io.Serializable;
+
+public class Dean extends UniversityEntity implements ISimpleEntity {
 
     @Override
-    public String returnObject() {
-        return toString();
+    public void traverseObject() {
+        System.out.println(toString());
     }
 
     @Override

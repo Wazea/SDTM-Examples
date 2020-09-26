@@ -13,7 +13,7 @@ public class ObjectPdfAdapter implements IPaper {
 
     @Override
     public void editText() {
-        PdfConvertor.convertPdf();
+        PdfConverter.convertPdf();
         pdfPaper.editPdfText();
     }
 
