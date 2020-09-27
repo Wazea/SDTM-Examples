@@ -7,7 +7,7 @@ import com.drvasile.domain.models.structures.Department;
 import com.drvasile.domain.models.structures.Faculty;
 import com.drvasile.domain.models.structures.University;
 
-public class CompositeMain {
+public class CompositeClient {
 
     public static void main(String[] args) {
 
