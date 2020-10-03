@@ -4,6 +4,7 @@ import com.drvasile.design_patterns.creational.factory_method.abstraction.IFacto
 import com.drvasile.domain.models.actors.Professor;
 import com.drvasile.domain.models.actors.UniversityAssistant;
 import com.drvasile.domain.models.actors.interfaces.ITeacher;
+import com.drvasile.domain.models.actors.interfaces.IUniversityEmployee;
 
 public class TeacherFactory implements IFactory {
 
@@ -23,7 +24,7 @@ public class TeacherFactory implements IFactory {
         return teacherFactoryInstance;
     }
 
-    public ITeacher createTeacher(String type) {
+    public IUniversityEmployee createObject(String type) {
         switch (type) {
             case "Professor": return new Professor();
             case "UniversityAssistant": return new UniversityAssistant();

@@ -3,7 +3,7 @@ package com.drvasile.design_patterns.creational.factory_method;
 import com.drvasile.design_patterns.creational.factory_method.abstraction.IFactory;
 import com.drvasile.domain.models.actors.Dean;
 import com.drvasile.domain.models.actors.Rector;
-import com.drvasile.domain.models.actors.interfaces.IAdministration;
+import com.drvasile.domain.models.actors.interfaces.IUniversityEmployee;
 
 public class AdministrationFactory implements IFactory {
 
@@ -23,7 +23,7 @@ public class AdministrationFactory implements IFactory {
         return administrationFactoryInstance;
     }
 
-    public IAdministration createAdministration(String type) {
+    public IUniversityEmployee createObject(String type) {
         switch (type) {
             case "Rector": return new Rector();
             case "Dean": return new Dean();
