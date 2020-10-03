@@ -2,6 +2,7 @@ package com.drvasile.design_patterns.creational.abstract_factory;
 
 import com.drvasile.design_patterns.creational.factory_method.TeacherFactory;
 import com.drvasile.design_patterns.creational.factory_method.abstraction.IFactory;
+import com.drvasile.domain.models.actors.interfaces.IUniversityEmployee;
 
 public class AbstractFactoryClient {
 
@@ -9,7 +10,10 @@ public class AbstractFactoryClient {
         IFactory teacherFactory = (TeacherFactory) Factory.createFactory("Teacher");
         IFactory administrationFactory = Factory.createFactory("Administration");
 
-        teacherFactory.createObject("Professor");
-        administrationFactory.createObject("Rector");
+        IUniversityEmployee professor = teacherFactory.createObject("Professor");
+        IUniversityEmployee rector = administrationFactory.createObject("Rector");
+
+        System.out.println(professor.toString());
+        System.out.println(rector.toString());
     }
 }

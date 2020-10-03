@@ -3,7 +3,6 @@ package com.drvasile.design_patterns.creational.factory_method;
 import com.drvasile.design_patterns.creational.factory_method.abstraction.IFactory;
 import com.drvasile.domain.models.actors.Professor;
 import com.drvasile.domain.models.actors.UniversityAssistant;
-import com.drvasile.domain.models.actors.interfaces.ITeacher;
 import com.drvasile.domain.models.actors.interfaces.IUniversityEmployee;
 
 public class TeacherFactory implements IFactory {

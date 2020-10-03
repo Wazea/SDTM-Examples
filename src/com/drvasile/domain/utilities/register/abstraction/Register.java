@@ -2,19 +2,19 @@ package com.drvasile.domain.utilities.register.abstraction;
 
 import com.drvasile.domain.models.actors.Professor;
 import com.drvasile.domain.models.actors.Student;
-import com.drvasile.domain.models.courses.Course;
+import com.drvasile.domain.models.courses.abstraction.CourseTopic;
 
 public abstract class Register {
 
-    private Course course;
+    private CourseTopic course;
     private Professor professor;
     private Student[] students;
 
-    public Course getCourse() {
+    public CourseTopic getCourse() {
         return course;
     }
 
-    public void setCourse(Course course) {
+    public void setCourse(CourseTopic course) {
         this.course = course;
     }
 

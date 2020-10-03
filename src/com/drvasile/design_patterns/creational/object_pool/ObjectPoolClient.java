@@ -15,6 +15,7 @@ public class ObjectPoolClient {
      */
     public static void main(String[] args) {
 
+        // List of available rooms
         Room[] rooms = new Room[10];
 
         // Initialization of new rooms
@@ -36,6 +37,7 @@ public class ObjectPoolClient {
             System.out.println("Room #" + rooms[currentRoom].getRoomID());
             currentRoom++;
 
+            // Reaching the 11th room
             if (currentRoom == 10) {
                 // Assign rooms for next class (after 1h30m + break)
                 currentRoom = 0;

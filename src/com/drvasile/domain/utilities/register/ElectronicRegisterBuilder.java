@@ -1,7 +1,6 @@
 package com.drvasile.domain.utilities.register;
 
 import com.drvasile.domain.models.actors.Professor;
-import com.drvasile.domain.models.courses.Course;
 import com.drvasile.domain.utilities.register.abstraction.RegisterBuilder;
 
 public class ElectronicRegisterBuilder extends RegisterBuilder {
@@ -12,7 +11,6 @@ public class ElectronicRegisterBuilder extends RegisterBuilder {
 
     @Override
     public RegisterBuilder putCourse() {
-        this.getRegister().setCourse(new Course());
         return this;
     }
 

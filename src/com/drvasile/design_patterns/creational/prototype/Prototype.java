@@ -4,7 +4,6 @@ public class Prototype {
 
     private String[] someExpensiveToGetData;
 
-
     public String[] getSomeExpensiveToGetData() {
         return someExpensiveToGetData;
     }
@@ -15,7 +14,13 @@ public class Prototype {
 
     public Prototype clone() {
         Prototype newObject = new Prototype();
-        newObject.setSomeExpensiveToGetData(this.getSomeExpensiveToGetData());
+        String[] newArray = new String[this.getSomeExpensiveToGetData().length];
+
+        for (int i = 0; i < this.getSomeExpensiveToGetData().length; i++) {
+            newArray[i] = this.getSomeExpensiveToGetData()[i];
+        }
+
+        newObject.setSomeExpensiveToGetData(newArray);
 
         return newObject;
     }

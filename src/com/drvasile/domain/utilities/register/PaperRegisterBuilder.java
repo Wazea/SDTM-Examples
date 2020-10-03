@@ -1,7 +1,7 @@
 package com.drvasile.domain.utilities.register;
 
 import com.drvasile.domain.models.actors.Professor;
-import com.drvasile.domain.models.courses.Course;
+import com.drvasile.domain.models.actors.Student;
 import com.drvasile.domain.utilities.register.abstraction.RegisterBuilder;
 
 public class PaperRegisterBuilder extends RegisterBuilder {
@@ -12,7 +12,6 @@ public class PaperRegisterBuilder extends RegisterBuilder {
 
     @Override
     public RegisterBuilder putCourse() {
-        this.getRegister().setCourse(new Course());
         return this;
     }
 
@@ -24,7 +23,7 @@ public class PaperRegisterBuilder extends RegisterBuilder {
 
     @Override
     public RegisterBuilder putStudentList() {
-        System.out.println("Write student list.");
+        this.getRegister().setStudents(new Student[] { new Student() });
         return this;
     }
 }

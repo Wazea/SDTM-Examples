@@ -14,6 +14,7 @@ public class Singleton {
 
         // Lazy initialization
         if (instance == null) {
+            // Thread safe
             synchronized (Singleton.class) {
                 if (instance == null) {
                     instance = new Singleton();
