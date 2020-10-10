@@ -23,7 +23,7 @@ public class PaperRegisterBuilder extends RegisterBuilder {
 
     @Override
     public RegisterBuilder putStudentList() {
-        this.getRegister().setStudents(new Student[] { new Student() });
+        // this.getRegister().setStudents(new Student[] { new Student() });
         return this;
     }
 }
