@@ -5,6 +5,7 @@ public class Student {
     private String name;
     private String surname;
     private Integer age;
+    private Double highSchoolGrade;
 
     public Student(String name, String surname, Integer age, Double highSchoolGrade) {
         this.name = name;
@@ -12,8 +13,6 @@ public class Student {
         this.age = age;
         this.highSchoolGrade = highSchoolGrade;
     }
-
-    private Double highSchoolGrade;
 
     public String getName() {
         return name;

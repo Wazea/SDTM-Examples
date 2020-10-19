@@ -21,4 +21,12 @@ public class Professor extends UniversityEntity implements IUniversityEmployee, 
     public String toString() {
         return "Professor";
     }
+
+    public Student[] getStudents() {
+        return students;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
+    }
 }

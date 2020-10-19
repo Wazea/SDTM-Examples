@@ -1,6 +1,7 @@
 package com.drvasile.design_patterns.structural.decorator;
 
 import com.drvasile.design_patterns.structural.decorator.abstraction.ILecturer;
+import com.drvasile.domain.models.actors.AssociateProfessor;
 
 public class DecoratorClient {
 
@@ -23,7 +24,7 @@ public class DecoratorClient {
 
         // Decorate with Conf title
         // ILecturer confLecturer = new ConfDecorator(new PhdDecorator(new SimpleLecturer()));
-        ILecturer confLecturer = new ConfDecorator(phdLecturer);
+        ILecturer confLecturer = new AssociateProfessor(phdLecturer);
         confLecturer.haveLecture();
     }
 }

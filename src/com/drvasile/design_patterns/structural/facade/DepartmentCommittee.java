@@ -35,5 +35,7 @@ public class DepartmentCommittee {
         } else {
             System.out.println("Maximum number of students reached.");
         }
+
+        System.out.println();
     }
 }

@@ -28,5 +28,6 @@ public class AdmissionCommission {
         System.out.println("Name :" + this.student.getName());
         System.out.println("Surname :" + this.student.getSurname());
         System.out.println("Age :" + this.student.getAge());
+        System.out.println();
     }
 }

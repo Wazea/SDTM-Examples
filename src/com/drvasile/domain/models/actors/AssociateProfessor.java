@@ -1,17 +1,17 @@
-package com.drvasile.design_patterns.structural.decorator;
+package com.drvasile.domain.models.actors;
 
 import com.drvasile.design_patterns.structural.decorator.abstraction.Decorator;
 import com.drvasile.design_patterns.structural.decorator.abstraction.ILecturer;
 
-public class ConfDecorator extends Decorator {
+public class AssociateProfessor extends Decorator {
 
-    public ConfDecorator(ILecturer lecturer) {
+    public AssociateProfessor(ILecturer lecturer) {
         this.setLecturer(lecturer);
     }
 
     @Override
     public void addTitle() {
-        System.out.println("Add Conf title.");
+        System.out.println("Add associatem professor title.");
     }
 
     @Override

@@ -4,6 +4,7 @@ import com.drvasile.domain.models.actors.Student;
 
 public class AdmissionFacade {
 
+    // Composition
     private static final AdmissionCommission admissionCommission = AdmissionCommission.getInstance();
     private static final DepartmentCommittee departmentCommittee = DepartmentCommittee.getInstance();
 
