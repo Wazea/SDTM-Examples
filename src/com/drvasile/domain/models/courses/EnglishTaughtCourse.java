@@ -1,7 +1,7 @@
 package com.drvasile.domain.models.courses;
 
-import com.drvasile.domain.models.courses.abstraction.CourseTopic;
-import com.drvasile.domain.models.courses.abstraction.TeachingLanguage;
+import com.drvasile.domain.models.courses.abstractions.CourseTopic;
+import com.drvasile.domain.models.courses.abstractions.TeachingLanguage;
 
 public class EnglishTaughtCourse extends TeachingLanguage {
 

@@ -1,6 +1,6 @@
 package com.drvasile.domain.models.courses;
 
-import com.drvasile.domain.models.courses.abstraction.CourseTopic;
+import com.drvasile.domain.models.courses.abstractions.CourseTopic;
 
 public class ECD extends CourseTopic {
 

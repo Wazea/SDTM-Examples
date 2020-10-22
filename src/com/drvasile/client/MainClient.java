@@ -1,30 +1,23 @@
 package com.drvasile.client;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class MainClient {
 
-    private static final Integer SCREEN_SIZE = 50;
     private static final Scanner scanner = new Scanner(System.in);
 
-    private static void clearScreen() {
-        for (int i = 0; i < SCREEN_SIZE; i++)
-            System.out.println();
-    }
+    private static void performOperations() {
 
-    private static Integer performOperations() {
         while (true) {
 
             System.out.println("Choose one operation from below by entering its index: ");
-            System.out.println("1. ");
+            System.out.println("1. Create object");
             System.out.println("2. ");
-            System.out.println("3. ");
+            System.out.println("3. Get University Structure");
             System.out.println("0. Exit the system");
             System.out.println();
 
             int operationType = scanner.nextInt();
-            clearScreen();
 
             switch (operationType) {
                 case 1:
@@ -37,7 +30,7 @@ public class MainClient {
                     break;
 
                 case 0:
-                    return 0;
+                    return;
 
                 default:
                     System.out.println("Operation not supported.");
@@ -46,7 +39,7 @@ public class MainClient {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         while (true) {
 
@@ -58,11 +51,10 @@ public class MainClient {
             System.out.println();
 
             int userChoice = scanner.nextInt();
-            clearScreen();
 
             switch (userChoice) {
+
                 case 1:
-                    System.out.println();
                     performOperations();
                     break;
 

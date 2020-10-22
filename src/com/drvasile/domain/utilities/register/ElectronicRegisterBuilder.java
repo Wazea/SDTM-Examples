@@ -1,6 +1,6 @@
 package com.drvasile.domain.utilities.register;
 
-import com.drvasile.domain.models.actors.Professor;
+import com.drvasile.domain.models.actors.teaching.Professor;
 import com.drvasile.domain.utilities.register.abstraction.RegisterBuilder;
 
 public class ElectronicRegisterBuilder extends RegisterBuilder {

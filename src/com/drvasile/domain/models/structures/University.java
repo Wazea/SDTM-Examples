@@ -1,8 +1,8 @@
 package com.drvasile.domain.models.structures;
 
-import com.drvasile.domain.models.actors.Rector;
-import com.drvasile.domain.models.structures.interfaces.IComplexEntity;
-import com.drvasile.domain.models.structures.interfaces.UniversityEntity;
+import com.drvasile.domain.models.actors.administration.Rector;
+import com.drvasile.domain.models.structures.abstractions.IComplexEntity;
+import com.drvasile.domain.models.structures.abstractions.UniversityEntity;
 
 public class University extends UniversityEntity implements IComplexEntity {
 
