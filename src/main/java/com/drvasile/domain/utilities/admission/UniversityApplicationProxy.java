@@ -8,7 +8,7 @@ public class UniversityApplicationProxy implements IAdmission {
     private boolean isRegistered;
     private UniversityApplication universityApplication;
 
-    UniversityApplicationProxy() {
+    public UniversityApplicationProxy() {
         this.isRegistered = false;
         this.universityApplication = new UniversityApplication();
     }
