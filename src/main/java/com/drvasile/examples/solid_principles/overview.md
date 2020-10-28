@@ -33,6 +33,7 @@ and can be applied also for other software entities like packages/directories, m
 
 A class should only have one responsibility. 
 Furthermore, it should only have one reason to change.
+
 This principle deals primarily with __*cohesion*__. 
 When software entities have bigger cohesion (i.e. are more coherent) they are easier to be reused and understood.
 
@@ -44,6 +45,11 @@ Classes should be open for extension, but closed for modification.
 
 An extension scenario might be adding a subclass for example. 
 Now, if our existing functional is based on concretions rather than abstractions it will be necessary to perform modifications so that the system will support the newly added subclass. 
+Thus, abstraction is the key to the OCP. By using abstraction, the functional of the system will get the necessary types of objects via Polymorphism.
+
+There are two techniques by which Polymorphism can be achieved. 
+* __*Dynamic Polymorphism*__: By using a common abstraction (i.e. an interface or abstract class) and subclasses;
+* __*Static Polymorphism*__: By using generics/templates;
 
 ## Liskov Substitution
 
