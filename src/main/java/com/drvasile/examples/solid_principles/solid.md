@@ -37,7 +37,7 @@ Furthermore, it should only have one reason to change.
 This principle deals primarily with __*cohesion*__. 
 When software entities have bigger cohesion (i.e. are more coherent) they are easier to be reused and understood.
 
-In the file __*ExampleSRP*__ are presented 2 classes that show a scenario in which SRP is obeyed and another one in which it is not.
+In the file __*ExampleSRP.java*__ are presented 2 classes that show a scenario in which SRP is obeyed and another one in which it is not.
 
 ## Open/Closed
 
@@ -51,16 +51,31 @@ There are two techniques by which Polymorphism can be achieved.
 * __*Dynamic Polymorphism*__: By using a common abstraction (i.e. an interface or abstract class) and subclasses;
 * __*Static Polymorphism*__: By using generics/templates;
 
+Some examples of OCP not being obeyed and the techniques we can use to enforce the principle can be found in __*ExampleOCP.java*__ file.
+
 ## Liskov Substitution
 
 If class A is a subtype of class B, then we should be able to replace B with A without disrupting the behavior of our program.
+In other words, a system that's using a base class should function properly is a derived class substitutes the base one.
+
+The principle was coined by Barbara Liskov in a work about data abstraction and type theory. 
+
+Examples of this principle can be found __*ExampleLSP.java*__ file.
 
 ## Interface Segregation
 
 Larger interfaces should be split into smaller ones. 
+
 By doing so, we can ensure that implementing classes only need to be concerned about the methods that are of interest to them.
 
 ## Dependency Inversion
 
+Depend upon Abstractions. Do not depend upon Concretions.
+The simple reason is that concrete things change a lot, but abstractions change less frequently.
 The principle of Dependency Inversion refers to the decoupling of software modules.
 This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
+
+## Other Principles
+
+* Design by Contract: Bertrand Meyer;
+* Code against Interfaces not Implementations;

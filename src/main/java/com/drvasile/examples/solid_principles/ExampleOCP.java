@@ -11,11 +11,15 @@ class BeforeOCP {
     interface IClass {}
 
     static class ClassA implements IClass {
-        void actionA() {}
+        void actionA() {
+            System.out.println("ClassA: Method actionA()");
+        }
     }
 
     static class ClassB implements IClass {
-        void actionB() {}
+        void actionB() {
+            System.out.println("ClassB: Method actionB()");
+        }
     }
 
     public static void method(IClass object) {
@@ -38,10 +42,11 @@ class BeforeOCP {
 }
 
 /*
- * The class AfterOCP gives an example of OCP being obeyed.
- * In this case .
+ * The class AfterOCPDyPoly gives an example of OCP being obeyed by using dynamic polymorphism.
+ * In this case inheritance is used at its full potential to achieve dynamic polymorphism with the subclasses that have
+ * specific method declaration, but the same method signature.
  */
-class AfterOCP {
+class AfterOCPDyPoly {
 
     interface IClass {
         void action();
@@ -50,18 +55,16 @@ class AfterOCP {
     static class ClassA implements IClass {
         @Override
         public void action() {
-            // ClassA specific behavior
+            System.out.println("ClassA: Method action()");
         }
     }
 
     static class ClassB implements IClass {
         @Override
         public void action() {
-            // ClassB specific behavior
+            System.out.println("ClassB: Method action()");
         }
     }
-
-    private Integer type;
 
     public static void method(IClass object) {
         object.action();
@@ -72,5 +75,29 @@ class AfterOCP {
         method(new ClassB());
     }
 }
+
+/*
+ * The class AfterOCPStPoly gives an example of OCP being obeyed by using static polymorphism.
+ */
+class AfterOCPStPoly {
+
+    static class ClassA {
+        // Some fields and methods
+    }
+
+    static class ClassB {
+        // Some fields and methods
+    }
+
+    public static <Type> void method(Type object) {
+        System.out.println("An object of type " + object.getClass() + " was passed.");
+    }
+
+    public static void main(String[] args) {
+        method(new ClassA());
+        method(new ClassB());
+    }
+}
+
 
 
