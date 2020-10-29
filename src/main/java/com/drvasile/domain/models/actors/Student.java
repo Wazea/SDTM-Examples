@@ -45,4 +45,14 @@ public class Student {
     public void setHighSchoolGrade(Double highSchoolGrade) {
         this.highSchoolGrade = highSchoolGrade;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", highSchoolGrade=" + highSchoolGrade +
+                '}';
+    }
 }

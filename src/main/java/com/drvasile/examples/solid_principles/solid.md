@@ -64,6 +64,8 @@ Examples of this principle can be found __*ExampleLSP.java*__ file.
 
 ## Interface Segregation
 
+Many, client specific interfaces are better than one general purpose interface.
+
 Larger interfaces should be split into smaller ones. 
 
 By doing so, we can ensure that implementing classes only need to be concerned about the methods that are of interest to them.
@@ -71,6 +73,7 @@ By doing so, we can ensure that implementing classes only need to be concerned a
 ## Dependency Inversion
 
 Depend upon Abstractions. Do not depend upon Concretions.
+
 The simple reason is that concrete things change a lot, but abstractions change less frequently.
 The principle of Dependency Inversion refers to the decoupling of software modules.
 This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
