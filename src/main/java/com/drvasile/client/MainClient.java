@@ -12,8 +12,10 @@ public class MainClient {
 
             System.out.println("Choose one operation from below by entering its index: ");
             System.out.println("1. Create object");
-            System.out.println("2. ");
+            System.out.println("2. Apply to the University");
             System.out.println("3. Get University Structure");
+            System.out.println("4. Query on the Uni. Struct.");
+            System.out.println("5. Make Attendance");
             System.out.println("0. Exit the system");
             System.out.println();
 

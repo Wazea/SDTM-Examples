@@ -1,11 +1,17 @@
 package com.drvasile.domain.models.actors.administration;
 
-import com.drvasile.domain.models.actors.abstractions.IAdministration;
+import com.drvasile.domain.models.actors.abstractions.IAdministrationStaff;
 import com.drvasile.domain.models.actors.abstractions.IUniversityEmployee;
 import com.drvasile.domain.models.structures.abstractions.ISimpleEntity;
 import com.drvasile.domain.models.structures.abstractions.UniversityEntity;
 
-public class Dean extends UniversityEntity implements IAdministration, ISimpleEntity, IUniversityEmployee {
+public class Dean extends UniversityEntity implements IAdministrationStaff, ISimpleEntity, IUniversityEmployee {
+
+    private String name;
+
+    public Dean(String name) {
+        this.name = name;
+    }
 
     @Override
     public void traverseObject() {
@@ -14,6 +20,6 @@ public class Dean extends UniversityEntity implements IAdministration, ISimpleEn
 
     @Override
     public String toString() {
-        return "Dean";
+        return "Dean: " + this.name;
     }
 }

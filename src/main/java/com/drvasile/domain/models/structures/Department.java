@@ -6,6 +6,7 @@ import com.drvasile.domain.models.structures.abstractions.UniversityEntity;
 
 public class Department extends UniversityEntity implements IComplexEntity {
 
+    private String name;
     private Professor[] professors;
 
     public Professor[] getProfessors() {
@@ -29,6 +30,14 @@ public class Department extends UniversityEntity implements IComplexEntity {
 
     @Override
     public String toString() {
-        return "Department";
+        return "Department: " + this.name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

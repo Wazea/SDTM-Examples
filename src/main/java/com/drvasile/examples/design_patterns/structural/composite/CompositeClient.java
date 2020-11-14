@@ -13,11 +13,11 @@ public class CompositeClient {
 
         University university = new University(); // Root object;
         university.setLevel(0);
-        university.setRector(new Rector());
+        university.setRector(new Rector("Name"));
         university.setFaculties(new Faculty[]{ new Faculty(), new Faculty() });
 
         for (Faculty faculty : university.getFaculties()) {
-            faculty.setDean(new Dean());
+            faculty.setDean(new Dean("Name"));
             faculty.setDepartments(new Department[]{ new Department(), new Department(), new Department()});
 
             int professorCount = 1;

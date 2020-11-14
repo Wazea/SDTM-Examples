@@ -25,8 +25,8 @@ public class AdministrationFactory implements IFactory {
 
     public IUniversityEmployee createObject(String type) {
         switch (type) {
-            case "Rector": return new Rector();
-            case "Dean": return new Dean();
+            case "Rector": return new Rector("Name");
+            case "Dean": return new Dean("Name");
             default: return null;
         }
     }

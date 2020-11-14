@@ -1,0 +1,37 @@
+{
+  "universities": [
+    {
+      "name": "TUM",
+      "rector": {
+        "name": "Viorel"
+      },
+      "faculties": [
+        {
+          "name": "FCIM",
+          "dean": {
+            "name": "Dumitru"
+          },
+          "departments": [
+            {
+              "name": "ISA",
+              "professors": [
+                {
+                  "age": 39,
+                  "isPhd": false,
+                  "name": "Radu",
+                  "students": {}
+                },
+                {
+                  "age": 24,
+                  "isPhd": false,
+                  "name": "Ion",
+                  "students": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
