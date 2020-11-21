@@ -1,8 +1,8 @@
 package com.drvasile.domain.utilities;
 
-import com.drvasile.examples.not_integrated.strategy.GradeAttestation;
-import com.drvasile.examples.not_integrated.strategy.GradeExam;
-import com.drvasile.examples.not_integrated.strategy.GradeLab;
+import com.drvasile.examples.design_patterns.behavioral.strategy.GradeAttestation;
+import com.drvasile.examples.design_patterns.behavioral.strategy.GradeExam;
+import com.drvasile.examples.design_patterns.behavioral.strategy.GradeLab;
 
 public class GradingSystem {
 
