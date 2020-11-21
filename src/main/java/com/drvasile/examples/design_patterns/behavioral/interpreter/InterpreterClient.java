@@ -1,6 +1,7 @@
 package com.drvasile.examples.design_patterns.behavioral.interpreter;
 
 import com.drvasile.data.Universities;
+import com.drvasile.domain.utilities.university_structure.NonTerminalExp;
 
 public class InterpreterClient {
 

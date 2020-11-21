@@ -1,11 +1,11 @@
-package com.drvasile.examples.design_patterns.behavioral.interpreter;
+package com.drvasile.domain.utilities.university_structure;
 
 import com.drvasile.data.Universities;
 import com.drvasile.domain.models.structures.Department;
 import com.drvasile.domain.models.structures.Faculty;
 import com.drvasile.domain.models.structures.University;
 import com.drvasile.domain.models.structures.abstractions.UniversityEntity;
-import com.drvasile.examples.design_patterns.behavioral.interpreter.abstractions.IExpression;
+import com.drvasile.domain.utilities.university_structure.abstractions.IExpression;
 
 public class NonTerminalExp implements IExpression {
 
@@ -14,7 +14,7 @@ public class NonTerminalExp implements IExpression {
     private Faculty searchedFaculty;
     private Department searchedDepartment;
 
-    NonTerminalExp(String expression) {
+    public NonTerminalExp(String expression) {
         this.expression = expression;
     }
 

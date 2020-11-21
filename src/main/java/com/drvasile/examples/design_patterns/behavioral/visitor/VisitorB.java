@@ -4,6 +4,7 @@ import com.drvasile.examples.design_patterns.behavioral.visitor.abstractions.IVi
 
 // Some other operation
 public class VisitorB implements IVisitor {
+
     @Override
     public void performOperation(ElementA elementA) {
 

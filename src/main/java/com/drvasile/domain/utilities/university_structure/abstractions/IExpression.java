@@ -1,4 +1,4 @@
-package com.drvasile.examples.design_patterns.behavioral.interpreter.abstractions;
+package com.drvasile.domain.utilities.university_structure.abstractions;
 
 import com.drvasile.domain.models.structures.abstractions.UniversityEntity;
 

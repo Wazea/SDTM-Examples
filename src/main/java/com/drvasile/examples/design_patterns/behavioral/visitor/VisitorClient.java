@@ -16,5 +16,6 @@ public class VisitorClient {
         uniAssistant.accept(teachingHours);
 
         professor1.operation();
+        uniAssistant.operation();
     }
 }
